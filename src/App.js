@@ -76,22 +76,6 @@ export default class App extends Component {
     }
 
 
-    isSuccess= () =>
-    {  let flipeedcells=0;
-        
-        for (let i = 0; i < Constants.BOARD_LARGE_SIZE; i++) {
-        for (let j = 0; j < Constants.BOARD_LARGE_SIZE; j++) {
-            debugger;
-if(this.grid[i][j].state.flipped=== true)
-{
-    flipeedcells++
-}
-           
-        }
-    }
-    if(flipeedcells === 10)
-alert('success');
-    }
 
     showCount = (x, y) => {
         for (let i = -1; i <= 1; i++) {
@@ -129,7 +113,6 @@ alert('success');
             this.showCount(x, y);
 
         }
-       this. isSuccess();
     }
 
     renderBoard = () => {

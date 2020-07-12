@@ -78,7 +78,7 @@ import Images from '../../../assets/Images';
          
             let content = null;
             if (this.state.isMine){
-                debugger;
+               
                 content = (
                     <Image source={Images.mine} style={{ width: this.props.width / 2, height: this.props.height / 2}} resizeMode="contain" />
                 )
